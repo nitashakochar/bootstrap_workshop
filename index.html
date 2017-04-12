@@ -33,22 +33,32 @@
     </div>
   </nav>
 
-  <div class="jumbotron">
+  <div class="container-fluid jumbotron">
     <div>
-      <h1>Dartmouth CS Survival Guide</h1>
-      <p>Welcome to the homepage of the Dartmouth CS Survival Guide: your home
+      <h1 class="text-center">Dartmouth CS Survival Guide</h1>
+      <p class="text-center">Welcome to the homepage of the Dartmouth CS Survival Guide: your home
         for helpful tips, tricks, and stories to help you get through your time
         as a CS major.</p>
       </div>
     </div>
 
     <div class="container-fluid">
-      <h2>Top 6 Common CS Mistakes to Avoid</h2>
+      <h2 class="text-center bg-primary">Top 6 Common CS Mistakes to Avoid</h2>
       <div class="row">
-        <div class="col-md-3">
-          <h3>#1: Segmentation Faults (Core Dumped)</h3>
+
+      <!--creating space between h2  and content -->
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6">
+                <h1></h1>
+            </div>
+          </div>
         </div>
-        <div class="col-md-3">
+
+        <div class="col-md-6">
+          <h3 class="bg-warning">#1: Segmentation Faults (Core Dumped)</h3>
+        </div>
+        <div class="col-md-6">
           <p>
             As anyone who has programmed in C knows, working with a language
             that is not memory safe can be a blessing and a curse.  One
@@ -58,10 +68,13 @@
             'Taking a segfault to the face'.
           </p>
         </div>
-        <div class="col-md-3">
-          <h3>#2: Procrastination</h3>
+      </div>
+
+        <div class="row">
+        <div class="col-md-6">
+          <h3 class="bg-warning">#2: Procrastination</h3>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6">
           <p>
             The only possible thing that makes a CS lab harder is when its
             due at midnight and it’s 10pm.  Being a CS major and procrastinating
@@ -73,10 +86,10 @@
       </div>
 
       <div class="row">
-        <div class="col-md-3">
-          <h3>#3: Not Using Git</h3>
+        <div class="col-md-6">
+          <h3 class="bg-warning">#3: Not Using Git</h3>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6">
           <p>
             As a student, especially if no one else is working on your code,
             using Git can seem tedious and unneccessary.  Why learn this complicated
@@ -86,11 +99,13 @@
             save invaluable time and is a necessary skill for group work.
           </p>
         </div>
+      </div>
 
-        <div class="col-md-3">
-          <h3>#4: Getting Cooked</h3>
+        <div class="row">
+        <div class="col-md-6">
+          <h3 class="bg-warning">#4: Getting Cooked</h3>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6">
           <p>
             Ever tried taking two systems level programming courses in the same
             term?  Or how about saving an entire CS50 lab until the last minute?
@@ -102,17 +117,71 @@
           </p>
         </div>
       </div>
+
       <div class="row">
-        <div class="col-md-3">
-          <h3>#5: Forgetting How to Code</h3>
+        <div class="col-md-6">
+          <h3 class="bg-warning">#5: Forgetting How to Code</h3>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6">
           <p>
             What's that you say?  How could a programmer possibly forget how to
             code?  Well you're right, they probably couldn't.  The problem is
             that we had to make up some content for this tutorial and we
             ran out of ideas.
           </p>
+        </div>
+      </div>
+    </div>
+
+    <!--creating space between suggestion button and content -->
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6">
+              <h1></h1>
+            </div>
+          </div>
+        </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Trigger the modal with a button -->
+          <div class="col-md-6 col-md-offset-5">
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Suggestions?</button>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog modal-md">
+              <div class="modal-content">
+
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title text-center">Tell us!</h4>
+                </div>
+
+                <div class="modal-body">
+                  <div class="input-group">
+                    <input type="text" class="form-control" />
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" type="button">Send!</button>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!--creating space between suggestion button and footer -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <h2></h2>
         </div>
       </div>
     </div>
